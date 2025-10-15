@@ -5,6 +5,14 @@ const toggle = document.getElementById("drop-js");
 const close = document.getElementById("close");
 const drop = document.getElementById("dropdown");
 
+toggle.addEventListener("click", () => {
+  drop.classList.add("active_drop");
+});
+
+close.addEventListener("click", () => {
+  drop.classList.remove("active_drop");
+});
+
 butt.addEventListener("click", () => {
   more.classList.toggle("not_active");
 
@@ -13,12 +21,4 @@ butt.addEventListener("click", () => {
   } else if (butt.innerHTML === "See less") {
     butt.innerHTML = "See More";
   }
-});
-
-toggle.addEventListener("click", () => {
-  drop.classList.add("active_drop");
-});
-
-close.addEventListener("click", () => {
-  drop.classList.remove("active_drop");
 });

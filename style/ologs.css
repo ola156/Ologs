@@ -90,6 +90,9 @@ nav ul li a:hover {
 .menu-top img {
   width: 18px;
 }
+.menu-top h1 {
+  font-size: 22px;
+}
 
 .menu-bar ul {
   list-style: none;
