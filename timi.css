@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arima", system-ui;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 35px;
+}
+.logo-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-div img {
+  width: 40px;
+}
+.logo-div h1 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+nav {
+  width: 30%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: black;
+  font-size: 15px;
+}

@@ -1,0 +1,241 @@
+.portfolio,
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: rgb(19, 18, 18);
+}
+
+.contact {
+  padding: 100px 0px;
+}
+.portfolio .container {
+  flex-direction: column;
+}
+.portfolio-h1 {
+  margin-bottom: 50px;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work {
+  background-color: black;
+  border: 1px solid white;
+  padding: 30px 20px 10px 20px;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 1px 1px 2px rgb(22, 21, 21);
+  margin-bottom: 25px;
+}
+
+.work-img {
+  width: 100%;
+  border-radius: 10px;
+  scale: 1.02;
+  transition: ease 0.2s;
+}
+.work-img:hover {
+  scale: 1;
+}
+
+.work button {
+  background: transparent;
+  border: none;
+  padding: 7px 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.work button img {
+  width: 18px;
+  margin-left: 5px;
+  transition: ease-in-out 0.4s;
+}
+
+.work button:hover .bt {
+  margin-left: 10px;
+}
+
+.work .name {
+  font-size: 20px;
+  color: rgb(212, 139, 1);
+  margin-bottom: 10px 0px;
+}
+.work p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-load {
+  display: none;
+}
+
+/*----------------------------------------------------------
+
+----
+contact
+-------------------------------------------*/
+
+.contact .container {
+  flex-wrap: wrap;
+}
+.con1 {
+  width: 40%;
+  padding: 10px 20px;
+}
+
+.con1 h1 {
+  margin-bottom: 25px;
+}
+
+.con1 p {
+  margin-bottom: 20px;
+}
+.con1 hr {
+  width: 100%;
+  border: 1px solid white;
+  margin-bottom: 7px;
+}
+.con2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  margin-top: 30px;
+  width: 90%;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+form input,
+textarea {
+  padding: 12px 18px;
+  width: 100%;
+
+  background-color: rgba(204, 200, 200, 0.856);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+.btn-submit {
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+}
+
+/*----------------------------------------------------------
+
+----
+media queries
+-------------------------------------------*/
+
+@media (max-width: 1000px) {
+  .work .name {
+    font-size: 17px;
+  }
+  .work p {
+    font-size: 12px;
+  }
+  .portfolio .container {
+    width: 90%;
+  }
+  .active {
+    display: none;
+  }
+
+  .active.not_active {
+    display: flex;
+  }
+  .butt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-load {
+    display: block;
+    background: transparent;
+    border: 1px solid rgb(212, 139, 1);
+    border-radius: 6px;
+    color: rgb(212, 139, 1);
+    transition: ease 0.2s;
+  }
+  .btn-load:hover {
+    color: black;
+    background-color: rgb(212, 139, 1);
+  }
+
+  .con1 h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .work .name {
+    font-size: 13px;
+  }
+  .work p {
+    font-size: 10px;
+  }
+
+  .con1 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .con2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio-h1 {
+    font-size: 20px;
+  }
+  .work .name {
+    font-size: 20px;
+  }
+  .work p {
+    font-size: 14px;
+  }
+  .works {
+    flex-direction: column;
+  }
+  .work {
+    width: 100%;
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+}

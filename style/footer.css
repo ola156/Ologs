@@ -1,0 +1,118 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(black 5%, blue);
+  padding-bottom: 20px;
+}
+
+footer .container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carosel {
+  width: 90%;
+  margin: 70px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carosel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  gap: 20px;
+  animation: spin 15s infinite linear;
+  padding-right: 20px;
+}
+
+.card {
+  flex: 0 0 300px;
+  padding: 30px 15px;
+  border: 1px solid blue;
+  background-color: black;
+  border-radius: 6px;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card-img-div {
+  display: flex;
+  gap: 10px;
+}
+
+.card-img {
+  width: 50px;
+  border-radius: 4px;
+}
+
+.cus-div h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(212, 139, 1);
+}
+
+.cus-div img {
+  width: 60px;
+}
+
+.border {
+  border: 1px solid blue;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(24, 22, 22, 0.432);
+  padding: 30px 40px;
+  width: 100%;
+}
+
+.foot-main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.foot-main ul {
+  list-style: none;
+}
+
+.foot-main ul li a {
+  color: white;
+  font-weight: 600;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.foot span {
+  font-size: 12px;
+}
+
+@keyframes spin {
+  form {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .foot-main h1 {
+    font-size: 20px;
+  }
+}
